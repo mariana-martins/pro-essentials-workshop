@@ -1,5 +1,7 @@
-const addClickEventListener = (listener) => {
-  document.addEventListener("click", listener);
+
+
+const addClickEventListener = (listener: () => void) => {
+  document.addEventListener('click', listener);
 };
 
 addClickEventListener(() => {
